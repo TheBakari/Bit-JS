@@ -1,0 +1,19 @@
+.list-backgorund{
+    background-color: red;
+}
+
+#secondList{
+    background-color: aqua;
+}
+
+.listElement{
+    background-color: blueviolet;
+}
+.thirdList{
+    background-color: chartreuse;
+}
+
+.active {
+    background: red;
+    padding: 15px;
+  }
