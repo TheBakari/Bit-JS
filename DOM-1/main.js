@@ -1,3 +1,15 @@
+// Selecting One/Multiple Elements
+// Create two unordered lists on the page.
+// Create a function that selects the second list and applies a class that sets some
+// background color to it.
+// Create a second function that, when triggered, selects all &lt;li&gt; elements on the
+// page.
+// The function also sets a class that sets some bg color to every &lt;li&gt; element.
+// Create one more unordered list and one more function
+// The function​ should select only &lt;li&gt; elements from that last list
+// Each &lt;li&gt; element should get a class that sets some bg color and transforms the
+// text to uppercase.
+
 document.addEventListener('DOMContentLoaded', function () {
     console.log(document.querySelectorAll("body ul")[1])
     var ul1= document.querySelectorAll("body ul")[1]
@@ -34,6 +46,15 @@ function onMoreUl(ul){
     }
 }
 
+// Traversing
+// Create two unordered lists.
+// Each list should be wrapped in a div element.
+// One &lt;li&gt; element in the second list should have a class “active”, which sets its
+// background color.
+// Create a function that selects the &lt;li&gt; element with class “active”.
+// Remove the class from that element, and then select the first &lt;li&gt; element in the
+// first unordered list using node relations.
+// Apply class to that newly selected &lt;li&gt; element
 
 // function traversing(){
 //     var activeLi=document.querySelector('.active')
@@ -57,3 +78,33 @@ function changeRemoveClass () {
     liChilds.className = "active";// dodelju klasu 
 }
 changeRemoveClass();
+
+
+// Access/Update Text Node
+// Create an unordered list containing &lt;li&gt; items that represent navigation.
+// Create a function that takes text from one of the &lt;li&gt; elements and presents it on
+// screen using alert.
+
+// Create one more function.
+// The function should take some text as an argument.
+// The function should select the last &lt;li&gt; element in the list and replace its text with
+// text passed as the function argument.
+
+function alertText(){
+    var liAlert=document.querySelector(".some-class").textContent;
+    alert(liAlert)
+}
+
+function nekiText(tekst){
+    var ul=document.querySelectorAll("ul");
+    var lastChild=ul[5].lastElementChild;
+    lastChild.textContent=tekst
+}
+var string="NEKI TEST TESTIRANJE "
+
+alertText()
+nekiText(string)
+
+
+
+
