@@ -96,8 +96,8 @@ function alertText(){
 }
 
 function nekiText(tekst){
-    var ul=document.querySelectorAll("ul");
-    var lastChild=ul[5].lastElementChild;
+    var ul=document.getElementById("zamena");
+    var lastChild=ul.lastElementChild;
     lastChild.textContent=tekst
 }
 var string="NEKI TEST TESTIRANJE "
